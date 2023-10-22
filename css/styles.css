@@ -225,6 +225,7 @@ button{
 .cards:hover .btn{
 
     background-color: #F53855;
+    box-shadow: #f5474780 0px 48px 100px 0px;
     color: #fff;
 }
 
@@ -267,3 +268,116 @@ button{
     padding: 2rem 9rem;
     align-items: center;
 }
+
+.testimonials{
+
+    padding-top: 3rem;
+}
+
+.testimonials h1{
+
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.testimonials p{
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #4F5665;
+    padding-top: 2rem;
+
+}
+
+.feedback-container{
+
+    display: flex;
+    gap: 2rem;
+    padding-left: 7rem;
+}
+
+.testimonial-box {
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 33%;
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.testimonial-box p{
+    text-align: left;
+}
+
+.testimonials-footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8rem;
+    padding-top: 3rem;
+   
+}
+
+.carousel-controllers{
+
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+
+.controller{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #F54747;
+    color: #F53855;
+    border-radius: 50%;
+}
+
+.controller2{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #F54747;
+    background-color: #F53855;
+    border-radius: 50%;
+
+}
+
+
+
+
