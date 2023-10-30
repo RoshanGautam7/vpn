@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaslesVPN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: black;
+        }
+        .hero {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero-image img {
+            max-width: 50%;
+        }
+        /* Add to your existing CSS styles */
+.navbar {
+    flex-wrap: wrap;
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.navbar-links li {
+    margin: 0 1rem;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle span {
+    background: black;
+    height: 3px;
+    margin: 2px;
+    border-radius: 1px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar-links li {
+        margin: 0.5rem 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./images/logo.svg" alt="LaslesVPN Logo">
+        <ul class="navbar-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><button class="btn">Sign Up</button></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Want anything to be easy with LaslesVPN.</h1>
+            <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="./images/study.png" alt="Illustration of a person with a laptop">
+        </div>
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
